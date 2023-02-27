@@ -22,6 +22,7 @@ public class MyLB implements LoadBalancer{
         return next;
     }
 
+    //返回要访问哪台服务器
     @Override
     public ServiceInstance instances(List<ServiceInstance> serviceInstances) {
         int index = getAndIncrement() % serviceInstances.size();

@@ -42,6 +42,7 @@ public class OrderController {
         return restTemplate.getForObject(PAYMENT_URL + "/payment/get/"+id,CommonResult.class);
     }
 
+    //测试restTemplate.getForEntity
     @GetMapping("/consumer/payment/getForEntity/{id}")
     public CommonResult<Payment> getPayment2(@PathVariable("id") Long id){
         ResponseEntity<CommonResult> entity = restTemplate.getForEntity(PAYMENT_URL + "/payment/get/" + id, CommonResult.class);
@@ -53,6 +54,7 @@ public class OrderController {
         }
     }
 
+    //测试手写Ribbon负载均衡算法
     @GetMapping(value = "/consumer/payment/lb")
     public String getPaymentLB(){
         List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
