@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 
 @RestController
 @Slf4j
-@DefaultProperties(defaultFallback = "payment_Global_FallbackMethod")
+@DefaultProperties(defaultFallback = "payment_Global_FallbackMethod") //全局服务降级
 public class OrderHystrixController {
 
     @Resource
