@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20eaad08-4e67-4e7b-9185-7d0f0eba678f" name="Changes" comment="Sentinel+OpenFeign">
+    <list default="true" id="20eaad08-4e67-4e7b-9185-7d0f0eba678f" name="Changes" comment="Sentinel+Nacos持久化">
+      <change afterPath="$PROJECT_DIR$/seata-account-service2003/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-order-service2001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-storage-service2002/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +52,7 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2M5HmrJJYvuFSaWz9jYRko2l0HJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -67,12 +71,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/IdeaProjects/cloud2020/cloudalibaba-provider-payment9004/src/main/resources",
+    "last_opened_file_path": "D:/IdeaProjects/cloud2020/seata-account-service2003/src/main/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.44712645",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "5c51e6c68a76190e5c95b701d7d70306"
+    "spring.configuration.checksum": "0b0ac64697769ae2ba3b5ceed5209666"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -80,13 +84,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\cloud2020\cloudalibaba-provider-payment9004\src\main\resources" />
-      <recent name="D:\IdeaProjects\cloud2020\cloud-provider-payment8002\src\main\java\com\apple\springcloud" />
-      <recent name="D:\IdeaProjects\cloud2020\cloud-provider-payment8002\src\main\resources" />
-      <recent name="D:\IdeaProjects\cloud2020\cloud-api-commons\src\main\java\com\apple\springcloud" />
-      <recent name="D:\IdeaProjects\cloud2020\cloud-consumer-order80\src\main\java\com\apple\springcloud" />
+      <recent name="D:\IdeaProjects\cloud2020\seata-account-service2003\src\main\resources" />
+      <recent name="D:\IdeaProjects\cloud2020\seata-order-service2001\src\main\resources" />
+      <recent name="D:\IdeaProjects\cloud2020\seata-account-service2003\src\main\java\com\apple\springcloud" />
+      <recent name="D:\IdeaProjects\cloud2020\seata-storage-service2002\src\main\java\com\apple\springcloud" />
+      <recent name="D:\IdeaProjects\cloud2020\seata-storage-service2002\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.apple.springcloud.domain" />
       <recent name="com.apple.springcloud.controller" />
       <recent name="com.apple.springcloud" />
       <recent name="com.apple.springcloud.config" />
@@ -99,7 +104,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MainApp8401">
+  <component name="RunManager" selected="Spring Boot.SeataOrderMainApp2001">
     <configuration name="ConfigCenterMain3344" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-center-3344" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.apple.springcloud.ConfigCenterMain3344" />
@@ -162,15 +167,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NacosConfigClientMain3377" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="NacosConfigClientMain3377" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloudalibaba-config-nacos-client3377" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.apple.springcloud.NacosConfigClientMain3377" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.apple.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -272,6 +271,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PaymentMain9002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloudalibaba-provider-payment9002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.apple.springcloud.PaymentMain9002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PaymentMain9003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloudalibaba-provider-payment9003" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.apple.springcloud.PaymentMain9003" />
@@ -285,15 +291,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentMain9004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloudalibaba-provider-payment9004" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.apple.springcloud.PaymentMain9004" />
+    <configuration name="SeataAccountServiceApplication2003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-account-service2003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.apple.springcloud.SeataAccountServiceApplication2003" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.apple.springcloud.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataOrderMainApp2001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata-order-service2001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.apple.springcloud.SeataOrderMainApp2001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.apple.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeataStorageServiceApplication2002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="seata-storage-service2002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.apple.springcloud.SeataStorageServiceApplication2002" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -321,11 +347,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SeataOrderMainApp2001" />
+        <item itemvalue="Spring Boot.SeataAccountServiceApplication2003" />
         <item itemvalue="Spring Boot.MainApp8401" />
         <item itemvalue="Spring Boot.PaymentMain9003" />
         <item itemvalue="Spring Boot.OrderNacosMain84" />
-        <item itemvalue="Spring Boot.PaymentMain9004" />
-        <item itemvalue="Spring Boot.NacosConfigClientMain3377" />
       </list>
     </recent_temporary>
   </component>
@@ -366,7 +392,10 @@
       <workItem from="1678147514356" duration="2835000" />
       <workItem from="1678177951337" duration="3204000" />
       <workItem from="1678234289147" duration="12635000" />
-      <workItem from="1678321317615" duration="16429000" />
+      <workItem from="1678321317615" duration="17290000" />
+      <workItem from="1678407321572" duration="1884000" />
+      <workItem from="1678434401227" duration="1189000" />
+      <workItem from="1678495868579" duration="19103000" />
     </task>
     <task id="LOCAL-00001" summary="eureka">
       <created>1677285866865</created>
@@ -487,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678346232378</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Sentinel+Nacos持久化">
+      <created>1678348136341</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1678348136341</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,6 +559,7 @@
     <MESSAGE value="sentinel" />
     <MESSAGE value="Sentinel+Ribbon" />
     <MESSAGE value="Sentinel+OpenFeign" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sentinel+OpenFeign" />
+    <MESSAGE value="Sentinel+Nacos持久化" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sentinel+Nacos持久化" />
   </component>
 </project>
